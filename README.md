@@ -78,3 +78,5 @@ To do so I used already available model named LLaVA.
 
 ## Example explanation of an Ad Creative by LLaVA finetuned on custom data for ad specific purposes.
 ![Image with Complex Rhetoric Image](LLaVA_adv.png "LLaVA on Ad Creative")
+
+![image](https://github.com/anonymous-atom/AdGod/assets/74659873/47d48bdb-2275-4f57-acb2-62498a719cc2)
