@@ -10,7 +10,7 @@
 | Model Name | Train Accuracy  | Validation Accuracy: |
 |----------|----------|----------|
 |  ResNet152   | 79.28   | 79.96   |
-| CLIP(Original Weights)   | --   | 0.932   |
+| CLIP(Original Weights)   | --   | 93.2   |
 | CLIP(Finetuned)   | 98   | Data 6   |
 
 
