@@ -49,6 +49,8 @@ These are just a few examples of how ads use different types of **visual rhetori
 ![Image with Complex Rhetoric Image](paper3.png "Few Images with Complex Rhetoric Image")
 
 ## Using ViT(Vision Tranformers) based CLIP model
+![image](https://github.com/anonymous-atom/AdGod/assets/74659873/47d48bdb-2275-4f57-acb2-62498a719cc2)
+![image](https://github.com/anonymous-atom/AdGod/assets/74659873/c1770833-6e9a-4735-a460-9c42495b7d91)
 
 ### Using Pretrained
 | Model Name | Train Accuracy  | Validation Accuracy |
@@ -58,6 +60,7 @@ These are just a few examples of how ads use different types of **visual rhetori
 #### FPR(False Positive Rate) = 0.515
 
 As you can see above even though the accuracy of CLIP is really high but also have high FPR, that's is because of CLIP being trained on very large general data.
+
 ## The FPR can be significatly reduced to ~(0.1 to 0.04) which can be achieved using full training of the model CLIP model and increasing the dataset size. 
 ### CLIP can't be easily trained on small system and takes large time and compute
 
@@ -78,5 +81,3 @@ To do so I used already available model named LLaVA.
 
 ## Example explanation of an Ad Creative by LLaVA finetuned on custom data for ad specific purposes.
 ![Image with Complex Rhetoric Image](LLaVA_adv.png "LLaVA on Ad Creative")
-
-![image](https://github.com/anonymous-atom/AdGod/assets/74659873/47d48bdb-2275-4f57-acb2-62498a719cc2)
