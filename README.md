@@ -7,7 +7,7 @@
 
 ## Results
 
-| Model Name | Train Accuracy  | Validation Accuracy: |
+| Model Name | Train Accuracy  | Validation Accuracy |
 |----------|----------|----------|
 |  ResNet152   | 79.28   | 79.96   |
 | CLIP(Original Weights)   | --   | 90.2   |
@@ -45,3 +45,15 @@ These are just a few examples of how ads use different types of **visual rhetori
 
 ## Visual Question Answering
 ![Image with Complex Rhetoric Image](paper3.png "Few Images with Complex Rhetoric Image")
+
+## Using ViT(Vision Tranformers) based CLIP model
+
+### Using Pretrained
+| Model Name | Train Accuracy  | Validation Accuracy |
+|----------|----------|----------|
+| CLIP(Original Weights)   | --   | 90.2   |
+
+### Finetuning
+| Model Name | Train Accuracy  | Validation Accuracy |
+|----------|----------|----------|
+| CLIP(Finetuned)   | 98   | 94.6   |
