@@ -4,6 +4,7 @@
 * [Visual Rhetoric In Ad Creative](#first-bullet)
 * [Using CNNs](#CNN)
 * [Using CLIP](#using-vitvision-tranformers-based-clip-model)
+* [Explaining Visual Features of Ad]
 
 
 ## Results
@@ -68,3 +69,13 @@ As you can see above even though the accuracy of CLIP is really high but also ha
 
 
 #### FPR(False Positive Rate) = 0.41
+
+# Explaining Visual Features of Ad Creative
+To explain the visual rhetoric of the image we merge our model CLIP with an LLM using a projection matrix.
+To do so I used already available model named LLaVA.
+
+### Also to finetune LLaVA for Ad Creative Visual explanatin I created custom ** Visual Instruction tuning ** dataset and further finetune the model.
+
+## Example explanation of an Ad Creative by LLaVA finetuned on custom data for ad specific purposes.
+
+
