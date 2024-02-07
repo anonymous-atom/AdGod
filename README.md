@@ -11,7 +11,7 @@
 |----------|----------|----------|
 |  ResNet152   | 79.28   | 79.96   |
 | CLIP(Original Weights)   | --   | Data 6   |
-| CLIP(Finetuned)   | Data 5   | Data 6   |
+| CLIP(Finetuned)   | 98   | Data 6   |
 
 
 <a class="anchor" id="first-bullet"></a>
