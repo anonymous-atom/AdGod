@@ -3,6 +3,7 @@
 ### Table Of Content:
 * [Visual Rhetoric In Ad Creative](#first-bullet)
 * [Using CNNs](#CNN)
+* [Using CLIP](#using-vitvision-tranformers-based-clip-model)
 
 
 ## Results
