@@ -77,5 +77,4 @@ To do so I used already available model named LLaVA.
 ### Also to finetune LLaVA for Ad Creative Visual explanatin I created custom ** Visual Instruction tuning ** dataset and further finetune the model.
 
 ## Example explanation of an Ad Creative by LLaVA finetuned on custom data for ad specific purposes.
-
-
+![Image with Complex Rhetoric Image](LLaVA_AD.png "LLaVA on Ad Creative")
