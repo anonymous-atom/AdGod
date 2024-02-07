@@ -61,7 +61,7 @@ As you can see above even though the accuracy of CLIP is really high but also ha
 ### CLIP can't be easily trained on small system and takes large time and compute
 
 
-### Finetuning
+### Finetuned CLIP
 | Model Name | Train Accuracy  | Validation Accuracy |
 |----------|----------|----------|
 | CLIP(Finetuned)   | 98   | 94.6   |
