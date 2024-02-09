@@ -4,7 +4,7 @@
 * [Visual Rhetoric In Ad Creative](#first-bullet)
 * [Using CNNs](#CNN)
 * [Using CLIP](#using-vitvision-tranformers-based-clip-model)
-* [Explaining Visual Features of Ad]
+* [Explaining Visual Features of Ad](#Explain)
 
 
 ## Results
@@ -73,6 +73,8 @@ As you can see above even though the accuracy of CLIP is really high but also ha
 
 
 #### FPR(False Positive Rate) = 0.41
+
+<a class="anchor" id="Explain"></a>
 
 # Explaining Visual Features of Ad Creative
 To explain the visual rhetoric of the image we merge our model CLIP with an LLM using a projection matrix.
