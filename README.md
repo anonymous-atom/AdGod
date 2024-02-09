@@ -49,6 +49,7 @@ These are just a few examples of how ads use different types of **visual rhetori
 ![Image with Complex Rhetoric Image](paper3.png "Few Images with Complex Rhetoric Image")
 
 ## Using ViT(Vision Tranformers) based CLIP model
+[CLIP Finetuning](Adv_CLIP/Adv_CLIP_Custom.ipynb)
 ![image](https://github.com/anonymous-atom/AdGod/assets/74659873/47d48bdb-2275-4f57-acb2-62498a719cc2)
 ![image](https://github.com/anonymous-atom/AdGod/assets/74659873/c1770833-6e9a-4735-a460-9c42495b7d91)
 
