@@ -1,30 +1,30 @@
-# Ad Creative Recognition With Computer Vision
+# 🚀 Ad Creative Recognition With Computer Vision 🎨
 
-## Table Of Contents:
+## 📚 Table Of Contents:
 * [Visual Rhetoric In Ad Creative](#visual-rhetoric-in-ad-creative)
 * [Using CNNs](#using-cnns)
 * [Using CLIP](#using-clip)
 * [Explaining Visual Features of Ad](#explaining-visual-features-of-ad-creative)
 
-## Results
+## 📊 Results
 
 | Model Name         | Train Accuracy | Validation Accuracy |
 |--------------------|----------------|---------------------|
-| ResNet152          | 79.28          | 79.96               |
-| CLIP(Original Weights) | --             | 90.2                |
-| CLIP(Finetuned)    | 98             | 94.6                |
+| 🖼️ ResNet152          | 79.28          | 79.96               |
+| 🧠 CLIP(Original Weights) | --             | 90.2                |
+| ✨ CLIP(Finetuned)    | 98             | 94.6                |
 
 ## Visual Rhetoric In Ad Creative
 
-Ads are persuasive because they convey a certain message that appeals to the viewer. These are just a few examples of how ads use different types of **visual rhetoric** to convey their message, namely:
+Ads are not just ads; they are persuasive pieces of art that speak volumes to their audience. They achieve this through a myriad of visual techniques, including:
 
-- Common-sense reasoning,
-- Symbolism, and
-- Recognition of non-photorealistic objects.
+- 🤔 Common-sense reasoning,
+- 🎭 Symbolism, and
+- 🌟 Recognition of non-photorealistic objects.
 
-![Image with Complex Rhetoric Image](paper1.png "Example of Visual Rhetoric")
-![Image with Complex Rhetoric Image](paper2.png "Example of Visual Rhetoric")
-![Image with Complex Rhetoric Image](complex_img.png "Example of Visual Rhetoric")
+![Example of Visual Rhetoric](paper1.png)
+![Example of Visual Rhetoric](paper2.png)
+![Example of Visual Rhetoric](complex_img.png)
 
 ## Using CNNs
 
