@@ -1,69 +1,64 @@
 # Ad Creative Recognition With Computer Vision
 
-### Table Of Content:
-* [Visual Rhetoric In Ad Creative](#first-bullet)
-* [Using CNNs](#CNN)
-* [Using CLIP](#using-vitvision-tranformers-based-clip-model)
-* [Explaining Visual Features of Ad]
+## Table of Contents
 
+- [Visual Rhetoric In Ad Creative](#visual-rhetoric-in-ad-creative)
+- [Methodology](#methodology)
+    - [Using CNNs](#using-cnns)
+    - [Using CLIP](#using-clip)
+- [Results](#results)
+- [Explaining Visual Features of Ad](#explaining-visual-features-of-ad-creative)
+- [Citation](#citation)
 
 ## Results
 
-| Model Name | Train Accuracy  | Validation Accuracy |
-|----------|----------|----------|
-|  ResNet152   | 79.28   | 79.96   |
-| CLIP(Original Weights)   | --   | 90.2   |
-| CLIP(Finetuned)   | 98   | 94.6   |
+| Model Name         | Train Accuracy | Validation Accuracy |
+|--------------------|----------------|---------------------|
+| 🖼️ ResNet152          | 79.28          | 79.96               |
+| 🧠 CLIP(Original Weights) | --             | 90.2                |
+| ✨ CLIP(Finetuned)    | 98             | 94.6                |
 
 
-<a class="anchor" id="first-bullet"></a>
 
-Ads are persuasive because they convey a certain message that appeals to the viewer.
+## Visual Rhetoric In Ad Creative
 
-These are just a few examples of how ads use different types of **visual rhetoric** to convey their message, namely:
+Advertisements are not merely commercial messages but sophisticated visual compositions crafted to convey compelling narratives. They leverage various visual techniques including:
 
-- common-sense reasoning,
-- symbolism, and
-- recognition of non-photorealistic objects.
+- Common-sense reasoning,
+- Symbolism, and
+- Recognition of non-photorealistic objects.
 
-![Image with Complex Rhetoric Image](paper1.png "Few Images with Complex Rhetoric Image")
-![Image with Complex Rhetoric Image](paper2.png "Few Images with Complex Rhetoric Image")
-![Image with Complex Rhetoric Image](complex_img.png "Few Images with Complex Rhetoric Image")
+![Example of Visual Rhetoric](paper1.png)
+![Example of Visual Rhetoric](paper2.png)
+![Example of Visual Rhetoric](complex_img.png)
 
+## Methodology
 
-<a class="anchor" id="CNN"></a>
+### Using CNNs
 
-## We need to develop a method to decode symbolism in ads to better understand the visual rhetoric in an Ad Creative
+#### CNNs to Decode the Visual Rhetoric in an Ad Creative
 
-## CNNs to decode the Visual Rhetoric in an Ad Creative
+For detailed insights, refer to our [notebook](ImageUnderstanding.ipynb) for CNN-based solution.
 
-### Checkout the below notebook for CNN based solution
+| Model Name | Train Accuracy | Validation Accuracy |
+|------------|----------------|---------------------|
+| ResNet152  | 79.28          | 79.96               |
 
-[CNNs performance on Ad Creative Image Understanding](ImageUnderstanding.ipynb)
+### Using CLIP
 
-| Model Name | Train Accuracy  | Validation Accuracy: |
-|----------|----------|----------|
-|  ResNet152   | 79.28   | 79.96   |
+#### Using ViT(Vision Transformers) based CLIP model
 
-## Visual Question Answering
-![Image with Complex Rhetoric Image](paper3.png "Few Images with Complex Rhetoric Image")
+Explore our [CLIP Finetuning](Adv_CLIP/Adv_CLIP_Custom.ipynb) for detailed analysis.
 
-## Using ViT(Vision Tranformers) based CLIP model
-![image](https://github.com/anonymous-atom/AdGod/assets/74659873/47d48bdb-2275-4f57-acb2-62498a719cc2)
-![image](https://github.com/anonymous-atom/AdGod/assets/74659873/c1770833-6e9a-4735-a460-9c42495b7d91)
+| Model Name         | Train Accuracy | Validation Accuracy |
+|--------------------|----------------|---------------------|
+| CLIP(Original Weights) | --             | 90.2                |
 
-### Using Pretrained
-| Model Name | Train Accuracy  | Validation Accuracy |
-|----------|----------|----------|
-| CLIP(Original Weights)   | --   | 90.2   |
+ FPR(False Positive Rate) = 0.515
+#### As you can see above even though the accuracy of CLIP is really high but also have high FPR, that's is because of CLIP being trained on very large general data.
 
-#### FPR(False Positive Rate) = 0.515
-
-As you can see above even though the accuracy of CLIP is really high but also have high FPR, that's is because of CLIP being trained on very large general data.
-
-## The FPR can be significatly reduced to ~(0.1 to 0.04) which can be achieved using full training of the model CLIP model and increasing the dataset size. 
-### CLIP can't be easily trained on small system and takes large time and compute
-
+### The FPR can be significatly reduced to ~(0.1 to 0.04) which can be achieved using full training of the model CLIP model and increasing the dataset size.
+**Note:** CLIP can't be easily trained on small system and takes large time and compute
 
 ### Finetuned CLIP
 | Model Name | Train Accuracy  | Validation Accuracy |
@@ -73,11 +68,15 @@ As you can see above even though the accuracy of CLIP is really high but also ha
 
 #### FPR(False Positive Rate) = 0.41
 
-# Explaining Visual Features of Ad Creative
-To explain the visual rhetoric of the image we merge our model CLIP with an LLM using a projection matrix.
-To do so I used already available model named LLaVA.
+## Explaining Visual Features of Ad Creative
 
-### Also to finetune LLaVA for Ad Creative Visual explanatin I created custom ** Visual Instruction tuning ** dataset and further finetune the model.
+To provide a deeper understanding of ad creatives, we merge our CLIP model with a Language-Model using projection matrix. To do the same easily we can use LLaVA model which works the same way.
 
-## Example explanation of an Ad Creative by LLaVA finetuned on custom data for ad specific purposes.
-![Image with Complex Rhetoric Image](LLaVA_adv.png "LLaVA on Ad Creative")
+## Example Explanation of an Ad Creative by LLaVA
+
+![Example Explanation by LLaVA](LLaVA_adv.png "LLaVA on Ad Creative")
+
+## Citation
+
+If you find our work helpful, please consider citing:
+
